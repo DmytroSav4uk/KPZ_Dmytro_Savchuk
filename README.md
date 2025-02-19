@@ -64,3 +64,14 @@
 **Рання перевірка помилок**  
 Якщо вольєр заповнений, метод `AddAnimal()` одразу кидає виняток ([`InvalidOperationException`](./Zoo/Program.cs#L41)), що запобігає подальшій некоректній роботі програми.
 
+
+
+
+## Демонстрація роботи программи
+
+![alt text](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/master/image.png)
+
+## UML діаграма
+
+![alt text](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/master/Untitled%20Diagram.drawio.png)
+
