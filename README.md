@@ -1,77 +1,37 @@
-# Zoo Management System
+# Лабораторна робота №2
 
-## Дотримані принципи програмування
----
-### 1. DRY (Don't Repeat Yourself)
-**Уникнення дублювання коду**  
-Під час виконання завдання максимально уникається дублювання коду
----
-### 2. KISS (Keep It Simple, Stupid)
-**Простота та зрозумілість коду**  
-Замість складної системи класів використані окремі класи для тварин, вольєрів та працівників. Код є інтуїтивно зрозумілим і легким для підтримки.
+## Тема: Породжувальні шаблони проєктування
 
-➡ **Файл:** `Program.cs` ([Тварина](./Zoo/Program.cs#L7)) ([Вольєр](./Zoo/Program.cs#L26)) ([Працівник](./Zoo/Program.cs#L53))
+### Мета роботи:
+Навчитися реалізовувати породжувальні шаблони проєктування.
+
+### Виконав:
+Савчук Дмитро (ІПЗк-24-1)
 
 ---
 
-### 3. SOLID принципи
+### Зображення результатів виконання коду
 
-#### 3.1. Single Responsibility Principle (SRP)
-**Кожен клас має лише одну відповідальність**  
-- `Animal` – зберігає інформацію про тварину.  
-- `Enclosure` – відповідає за вольєри та їхню місткість.  
-- `Employee` – зберігає дані про працівників.  
-- `Zoo` – управляє сутностями зоопарку.  
----
-#### 3.2. Open/Closed Principle (OCP)
-**Програма відкрита для розширення, але закрита для модифікації**  
-Якщо потрібно додати новий тип об'єкта (наприклад, відвідувачів), можна просто створити новий клас і додати його до `Zoo`, не змінюючи існуючий код.
-
----
-
-#### 3.3. Liskov Substitution Principle (LSP)
-**Заміна підкласів не ламає програму**  
-Усі класи виводяться через `ToString()`, що дозволяє `Zoo` обробляти будь-які об'єкти без прив’язки до конкретного типу.
-
-
----
-
-#### 3.4. Interface Segregation Principle (ISP)
-**Відсутні великі інтерфейси, що нав’язують зайві методи**  
-Кожен клас містить лише необхідні йому методи та властивості без зайвих обов’язкових інтерфейсів.
----
-
-#### 3.5. Dependency Inversion Principle (DIP)
-**Взаємодія на рівні абстракцій**  
-Клас `Zoo` працює через `List<object>`, що дозволяє зберігати будь-які об’єкти без жорсткої залежності від конкретних класів.
-
----
-
-### 4. YAGNI (You Ain’t Gonna Need It)
-**Реалізовані лише необхідні функції**  
-Замість складної архітектури використано лише базові операції додавання та виводу сутностей.
-
----
-
-### 5. Composition Over Inheritance
-**Композиція замість спадкування**  
-Замість створення базового класу `Entity`, використовується зберігання ([`List<object>`](./Zoo/Program.cs#L72)) ,   що дозволяє легко додавати нові сутності без зміни існуючих класів.
-
-
----
-
-### 6. Fail Fast
-**Рання перевірка помилок**  
-Якщо вольєр заповнений, метод `AddAnimal()` одразу кидає виняток ([`InvalidOperationException`](./Zoo/Program.cs#L41)), що запобігає подальшій некоректній роботі програми.
+### Завдання 1
+![Image](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/lab-2/images/demonstration%20image/task1.PNG)
+### Завдання 2
+![Image](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/lab-2/images/demonstration%20image/task2.PNG)
+### Завдання 3
+![Image](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/lab-2/images/demonstration%20image/task3.PNG)
+### Завдання 4
+![Image](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/lab-2/images/demonstration%20image/task4.PNG)
+### Завдання 5
+![Image](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/lab-2/images/demonstration%20image/task5.PNG)
 
 
 
+### Зображення діаграм
 
-## Демонстрація роботи программи
 
-![alt text](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/master/image.png)
+### Завдання 1
+![Image](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/lab-2/images/diagrams/task1%20diagram.PNG)
+### Завдання 2
+![Image](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/lab-2/images/diagrams/task2%20diagram.PNG)
 
-## UML діаграма
-
-![alt text](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/master/Untitled%20Diagram.drawio.png)
-
+### Завдання 5
+![Image](https://github.com/DmytroSav4uk/KPZ_Dmytro_Savchuk/blob/lab-2/images/diagrams/task5%20diagram.PNG)
